@@ -13,6 +13,10 @@ const frames = [
     name: "Red Fire",
     image: "/frames/frame3.png",
   },
+  {
+    name: "Red Benedetta",
+    image: "/frames/frame4.png",
+  }
 ];
 
 export default function Home() {
