@@ -1,40 +1,27 @@
-<<<<<<< HEAD
 "use client";
 
 import React, { useState } from "react";
-=======
 import Image from "next/image";
->>>>>>> bf35b444eb382304e77eba1a7fc730f187fdd95c
 
 const frames = [
   {
     name: "Purple Neon",
     image: "/frames/frame1.png",
-<<<<<<< HEAD
     code: "PURPLE001",
-=======
->>>>>>> bf35b444eb382304e77eba1a7fc730f187fdd95c
   },
   {
     name: "Blue Ice",
     image: "/frames/frame2.png",
-<<<<<<< HEAD
     code: "BLUE002",
-=======
->>>>>>> bf35b444eb382304e77eba1a7fc730f187fdd95c
   },
   {
     name: "Red Fire",
     image: "/frames/frame3.png",
-<<<<<<< HEAD
     code: "RED003",
-=======
->>>>>>> bf35b444eb382304e77eba1a7fc730f187fdd95c
   },
   {
     name: "Red Benedetta",
     image: "/frames/frame4.png",
-<<<<<<< HEAD
     code: "BENE004",
   },
   {
@@ -53,126 +40,58 @@ export default function Home() {
       {/* HEADER */}
       <header className="flex items-center justify-between px-8 py-6 border-b border-zinc-800">
         <div className="flex items-center gap-4">
-          <img
-=======
-  }
-];
-
-export default function Home() {
-  return (
-    <main className="min-h-screen bg-black text-white">
-
-      {/* HEADER */}
-      <header className="flex items-center justify-between px-8 py-6 border-b border-zinc-800">
-
-        <div className="flex items-center gap-4">
-
           <Image
->>>>>>> bf35b444eb382304e77eba1a7fc730f187fdd95c
             src="/logo.png"
             alt="8CTA TOOLS"
             width={70}
             height={70}
             className="rounded-xl"
           />
-
-          <h1 className="text-2xl font-bold tracking-wide">
-            8CTA
-          </h1>
-<<<<<<< HEAD
+          <h1 className="text-2xl font-bold tracking-wide">8CTA</h1>
         </div>
 
         <nav className="flex gap-6 text-zinc-400">
-=======
-
-        </div>
-
-        <nav className="flex gap-6 text-zinc-400">
-
->>>>>>> bf35b444eb382304e77eba1a7fc730f187fdd95c
-          <a href="#" className="hover:text-white transition">
-            Inicio
-          </a>
-
-          <a href="#frames" className="hover:text-white transition">
-            Marcos
-          </a>
-
-          <a href="#" className="hover:text-white transition">
-            Premium
-          </a>
-<<<<<<< HEAD
+          <a href="#" className="hover:text-white transition">Inicio</a>
+          <a href="#frames" className="hover:text-white transition">Marcos</a>
+          <a href="#" className="hover:text-white transition">Premium</a>
         </nav>
-=======
-
-        </nav>
-
->>>>>>> bf35b444eb382304e77eba1a7fc730f187fdd95c
       </header>
 
       {/* HERO */}
       <section className="flex flex-col items-center justify-center text-center h-[85vh] px-6">
-<<<<<<< HEAD
-=======
-
->>>>>>> bf35b444eb382304e77eba1a7fc730f187fdd95c
         <h1 className="text-6xl md:text-8xl font-extrabold bg-gradient-to-r from-purple-500 to-cyan-400 text-transparent bg-clip-text">
           8CTA TOOLS
         </h1>
-
         <p className="mt-6 text-zinc-400 text-xl max-w-2xl">
           Marcos, overlays y herramientas premium para streamers.
         </p>
-
         <div className="mt-10 flex gap-4">
-<<<<<<< HEAD
-=======
-
->>>>>>> bf35b444eb382304e77eba1a7fc730f187fdd95c
           <a
             href="#frames"
             className="bg-purple-600 hover:bg-purple-700 transition px-8 py-4 rounded-2xl text-lg font-bold"
           >
             Explorar Marcos
           </a>
-
           <button className="border border-zinc-700 hover:border-zinc-500 transition px-8 py-4 rounded-2xl text-lg font-bold">
             Ver Premium
           </button>
-<<<<<<< HEAD
         </div>
-=======
-
-        </div>
-
->>>>>>> bf35b444eb382304e77eba1a7fc730f187fdd95c
       </section>
 
       {/* GALERÍA */}
       <section
         id="frames"
-<<<<<<< HEAD
         className="px-8 pb-20 bg-gradient-to-b from-black to-zinc-950"
       >
-        <h2 className="text-5xl font-bold mb-12 text-center">
-=======
-        className="px-8 pb-20"
-      >
-
-        <h2 className="text-5xl font-bold mb-12">
->>>>>>> bf35b444eb382304e77eba1a7fc730f187fdd95c
-          Marcos Destacados
-        </h2>
-
+        <h2 className="text-5xl font-bold mb-12 text-center">Marcos Destacados</h2>
         <div className="grid md:grid-cols-3 gap-8">
-<<<<<<< HEAD
           {frames.map((frame) => (
             <div
               key={frame.code}
               className="group bg-zinc-900 border border-zinc-800 rounded-3xl overflow-hidden hover:scale-105 hover:border-purple-500 transition-all duration-300"
             >
               <div className="overflow-hidden">
-                <img
+                <Image
                   src={frame.image}
                   alt={frame.name}
                   width={600}
@@ -180,35 +99,9 @@ export default function Home() {
                   className="w-full transition duration-500 group-hover:scale-110"
                 />
               </div>
-
               <div className="p-6">
-=======
-
-          {frames.map((frame, index) => (
-            <div
-              key={index}
-              className="bg-zinc-900 border border-zinc-800 rounded-3xl overflow-hidden hover:scale-105 transition"
-            >
-
-              <Image
-                src={frame.image}
-                alt={frame.name}
-                width={600}
-                height={400}
-                className="w-full"
-              />
-
-              <div className="p-6">
-
->>>>>>> bf35b444eb382304e77eba1a7fc730f187fdd95c
-                <h3 className="text-2xl font-bold">
-                  {frame.name}
-                </h3>
-
-<<<<<<< HEAD
-                <p className="text-zinc-400 mt-2">
-                  Marco exclusivo de 8CTA Tools.
-                </p>
+                <h3 className="text-2xl font-bold">{frame.name}</h3>
+                <p className="text-zinc-400 mt-2">Marco exclusivo de 8CTA Tools.</p>
 
                 {!unlocked[frame.code] ? (
                   <div className="mt-6">
@@ -216,22 +109,13 @@ export default function Home() {
                       type="text"
                       placeholder="Ingresa tu código"
                       value={codes[frame.code] || ""}
-                      onChange={(e) =>
-                        setCodes({
-                          ...codes,
-                          [frame.code]: e.target.value,
-                        })
-                      }
+                      onChange={(e) => setCodes({ ...codes, [frame.code]: e.target.value })}
                       className="w-full px-4 py-3 rounded-xl bg-zinc-800 border border-zinc-700 text-white"
                     />
-
                     <button
                       onClick={() => {
                         if (codes[frame.code] === frame.code) {
-                          setUnlocked({
-                            ...unlocked,
-                            [frame.code]: true,
-                          });
+                          setUnlocked({ ...unlocked, [frame.code]: true });
                         } else {
                           alert("Código incorrecto");
                         }
@@ -250,7 +134,6 @@ export default function Home() {
                     >
                       Descargar
                     </a>
-
                     <button className="px-5 py-3 rounded-2xl border border-zinc-700 hover:border-purple-500 transition">
                       Vista
                     </button>
@@ -264,44 +147,10 @@ export default function Home() {
 
       {/* FOOTER */}
       <footer className="border-t border-zinc-800 py-10 text-center">
-        <h3 className="font-bold text-lg">
-          8CTA TOOLS
-        </h3>
-
-        <p className="text-zinc-500 mt-2">
-          Marcos, overlays y diseños para streamers y esports.
-        </p>
-
-        <p className="text-zinc-600 mt-4">
-          © 2026 Todos los derechos reservados.
-        </p>
+        <h3 className="font-bold text-lg">8CTA TOOLS</h3>
+        <p className="text-zinc-500 mt-2">Marcos, overlays y diseños para streamers y esports.</p>
+        <p className="text-zinc-600 mt-4">© 2026 Todos los derechos reservados.</p>
       </footer>
-=======
-                <a
-                  href={frame.image}
-                  download
-                  className="mt-5 inline-block bg-purple-600 hover:bg-purple-700 transition px-5 py-3 rounded-2xl font-bold"
-                >
-                  Descargar
-                </a>
-
-              </div>
-
-            </div>
-          ))}
-
-        </div>
-
-      </section>
-
-      {/* FOOTER */}
-      <footer className="border-t border-zinc-800 py-8 text-center text-zinc-500">
-
-        © 2026 8CTA TOOLS - Todos los derechos reservados
-
-      </footer>
-
->>>>>>> bf35b444eb382304e77eba1a7fc730f187fdd95c
     </main>
   );
 }
